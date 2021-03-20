@@ -24,5 +24,14 @@ EOD;
 
 function option1()
 {
-  echo "Sida 2";
+  echo <<< 'EOD'
+  <form action="/html/tags/html_form_tag_action.cfm" method="post">
+  <div>
+  <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">
+  To do list!
+  </textarea>
+  </div>
+  <input type="submit" value="Submit">
+  </form>
+  EOD;
 }
